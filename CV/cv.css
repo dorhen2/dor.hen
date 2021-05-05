@@ -108,10 +108,23 @@ margin-left: 10%;
 
 }
 .proj h1{
-    font-size:30px;
+    font-size:27px;
     margin-left: 10%;
-    margin-top: 25%;
+    margin-top: 17%;
 }
+.proj h1 a:link{
+    color: black;
+    text-decoration: none;
+}
+.proj h1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+.proj h1 a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 
 .cont{
  grid-area: cont;
@@ -187,7 +200,6 @@ margin-right: 3%;
     background-image: linear-gradient(var(--sec),var(--first));
 
 }
-
 
 
 @media only screen and (max-width: 769px){

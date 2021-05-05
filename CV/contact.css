@@ -11,6 +11,7 @@
     height: 80px;
     display: block;
 line-break: auto;
+
 }
 
 
@@ -37,11 +38,12 @@ line-break: auto;
     font-family: 'Montserrat', serif;
     font-size: 50px;
     display: table-cell;
+
 }
 .logo_container h1 col{
     width: 25%;
     float: left;
-
+font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -98,9 +100,16 @@ line-break: auto;
     background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+        font-family: 'Montserrat', sans-serif;
+
 }
 
 
+.list{
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+}
 
 
 @media screen and (max-width: 738px){
