@@ -10,7 +10,7 @@ def hello_world():
     return render_template('cv.html')
 
 @app.route('/hi')
-def assignment8():
+def assignment():
     return render_template('assignment8.html',
                            user={'firstName': "", 'gender': "Ms"},
                            len=len(prog),
@@ -28,12 +28,19 @@ def Contacts():
 
 @app.route('/assignmen8')
 def assignmentPage():
-    return render_template('assignment8.html')
-
+    return render_template(
+                           user={'firstName': "", 'gender': "Ms"},
+                           len=len(prog),
+                           prog=prog,
+                           level=level)
 
 @app.route('/skills')
 def my_skill():
-    return render_template('skill.html')
+    return render_template('skill.html'
+                           , user={'firstName': "", 'gender': "Ms"},
+                           len=len(prog),
+                           prog=prog,
+                           level=level)
 
 
 
