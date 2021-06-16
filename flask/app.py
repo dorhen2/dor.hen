@@ -1,7 +1,13 @@
-from flask import Flask, redirect, url_for, render_template, request, session
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
 app.secret_key = '123'
+
+from pages.ass10.ass10 import ass10
+app.register_blueprint(ass10)
+
+from pages.ass11.users import users
+app.register_blueprint(users)
 
 prog = ["Java", "Python"]
 level = ["Professional", "Beginner"]
